@@ -8,8 +8,8 @@
 */
 int main(void)
 {
-char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-ssize_t len = strlen(message);
-syscall(SYS_write, STDERR_FILENO, message, len);
+char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+ssize_t len = strlen(msg);
+syscall(SYS_write, STDERR_FILENO, msg, len);
 return (1);
 }
