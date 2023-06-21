@@ -1,18 +1,16 @@
-#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
-* main - Entry point of the program
-*
-* Return: Always 0 (Success) 
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
 
 int main(void)
 {
-char *str = "_putchar\n";
-int i;
-for (i = 0; str[i] != '\0'; i++)
-{
-/* Use the write() function to print each character */
-write(1, &str[i], 1);
-}
+
+printf("_putchar\n");
+
 return (0);
 }
